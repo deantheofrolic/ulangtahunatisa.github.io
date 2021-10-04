@@ -1,1 +1,1 @@
-window.location.href = "present.html";
+window.location.href = "src/present.html";
