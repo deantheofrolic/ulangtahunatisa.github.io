@@ -13,33 +13,9 @@ main {
   overflow-x: hidden;
 }
 
-main a {;
+main a {
   font-size: 0.9em;
   color: whitesmoke;
-}
-
-.dropdown-content {
-  display: none;
-  position: absolute;
-  background-color: #f1f1f1;
-  min-width: 160px;
-  box-shadow: 0px 2px 15px 0px rgba(0, 0, 0, 0.2);
-  z-index: 1;
-}
-
-.dropdown-content a {
-  color: black;
-  padding: 12px 16px;
-  text-decoration: none;
-  display: block;
-}
-
-.dropdown-content a:hover {
-  background-color: #ddd;
-}
-
-.dropdown:hover .dropdown-content {
-  display: block;
 }
 
 main .nav-item:last-child {
@@ -50,12 +26,16 @@ main .nav-item {
   padding: 0.9em;
 }
 
-main .nav-link:hover {
-  color: black;
-}
-
 main .navbar-brand {
   padding-left: 8rem;
+}
+
+main .nav-link:hover {
+  color: #05FDD8;
+}
+
+main .navbar-brand:hover {
+  color: #05FDD8;
 }
 
 main .row .col-md-7 {
@@ -419,21 +399,16 @@ main .container .col-md-7 p {
     position: absolute;
 }
 
-.svg {
-    top: -12px;
-    right: -2px;
-    width: 204px;
-    z-index: 1;
-    position: absolute;
-}
-
-
 /* Responsive */
-@media only screen and (max-width: 768px) {
+/*@media only screen and (max-width: 768px) {
   main .navbar-brand {
     padding-left: 1rem;
   }
-}
+
+  /*.cat-container {
+    transform: scale(1.25) translate(-4rem, -10rem);
+  }
+}*/
 
 /* Animations */
 @keyframes blink {

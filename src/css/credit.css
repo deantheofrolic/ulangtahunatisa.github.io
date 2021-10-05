@@ -13,3 +13,10 @@ h1, p, figcaption, span {
 	font-family: "Arial", sans-serif;
 	margin: 1rem;
 }
+
+/* Responsive */
+@media only screen and (max-width: 768px) {
+	h1 {
+		font-size: 28px;
+	}
+}

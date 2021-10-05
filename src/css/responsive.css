@@ -1,0 +1,39 @@
+@media only screen and (max-width: 875px) {
+	/* Main Page */
+	main .navbar-brand {
+		padding-left: 1rem;
+	}
+
+	/* Cat Box */
+	.cat-container {
+		margin: 0 auto;
+		transform: scale(1.25) translateY(-25vh);		
+	}
+
+	/* Present */
+	.present {
+		margin: 25vh auto;
+	}
+
+	/* Video */
+	.monitor {
+		width: 528px;
+		height: 440px;
+	}
+}
+
+@media only screen and (max-width: 775px) {
+	/* Video */
+	.monitor {
+		width: 478px;
+		height: 415px;
+	}
+}
+
+@media only screen and (max-width: 675px) {
+  /* Video */
+  .monitor {
+  	width: 430px;
+  	height: 375px;
+  }
+}
