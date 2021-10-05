@@ -92,6 +92,11 @@ main .container .col-md-7 p {
   font-weight: bold;
 }
 
+.primary-btn a {
+  color: #1D1D1D;
+  text-decoration: none;
+}
+
 /* Present */
 .present {
   width: 410px;
