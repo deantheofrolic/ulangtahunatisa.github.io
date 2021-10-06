@@ -367,6 +367,116 @@ main .container .col-md-7 p {
   animation: loader-inner 2s infinite ease-in;
 }
 
+/* Firework Effects */
+.firework {
+  position: absolute;
+}
+
+.explosion {
+  position: absolute;
+  left: -2px;
+  bottom: 0;
+  width: 4px;
+  height: 80px;
+  transform-origin: 50% 100%;
+  overflow: hidden;
+}
+
+.explosion:nth-child(1) {
+  transform: rotate(0deg) translateY(-15px);
+}
+
+.explosion:nth-child(2) {
+  transform: rotate(30deg) translateY(-15px);
+}
+
+.explosion:nth-child(3) {
+  transform: rotate(60deg) translateY(-15px);
+}
+
+.explosion:nth-child(4) {
+  transform: rotate(90deg) translateY(-15px);
+}
+
+.explosion:nth-child(5) {
+  transform: rotate(120deg) translateY(-15px);
+}
+
+.explosion:nth-child(6) {
+  transform: rotate(150deg) translateY(-15px);
+}
+
+.explosion:nth-child(7) {
+  transform: rotate(180deg) translateY(-15px);
+}
+
+.explosion:nth-child(8) {
+  transform: rotate(210deg) translateY(-15px);
+}
+
+.explosion:nth-child(9) {
+  transform: rotate(240deg) translateY(-15px);
+}
+
+.explosion:nth-child(10) {
+  transform: rotate(270deg) translateY(-15px);
+}
+
+.explosion:nth-child(11) {
+  transform: rotate(300deg) translateY(-15px);
+}
+
+.explosion:nth-child(12) {
+  transform: rotate(330deg) translateY(-15px);
+}
+
+.explosion::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 100%;
+  height: 40px;
+}
+
+.explosion:nth-child(odd)::before {
+  background-color: #05FDD8;
+}
+
+.explosion:nth-child(even)::before {
+  background-color: #FD2155;
+}
+
+.firework-one {
+  left: 50%;
+  top: 50%;
+  transform: scale(1);
+}
+
+.firework-one .explosion::before {
+  animation: explosion 2s ease-in-out infinite;
+}
+
+.firework-two {
+  left: 40%;
+  top: 45%;
+  transform: scale(.7);
+}
+
+.firework-two .explosion::before {
+  animation: explosion 2s .6s ease-in-out infinite;
+}
+
+.firework-three {
+  left: 60%;
+  top: 65%;
+  transform: scale(.4);
+}
+
+.firework-three .explosion::before {
+  animation: explosion 2s .4s ease-in-out infinite;
+}
+
 /* Videos */
 .monitor-container {
     display: flex;
@@ -398,17 +508,6 @@ main .container .col-md-7 p {
     z-index: 1;
     position: absolute;
 }
-
-/* Responsive */
-/*@media only screen and (max-width: 768px) {
-  main .navbar-brand {
-    padding-left: 1rem;
-  }
-
-  /*.cat-container {
-    transform: scale(1.25) translate(-4rem, -10rem);
-  }
-}*/
 
 /* Animations */
 @keyframes blink {
@@ -458,5 +557,14 @@ main .container .col-md-7 p {
 
   100% {
     height: 0%;
+  }
+}
+
+@keyframes explosion {
+  0% {
+    top: 100%;
+  }
+  33%, 100% {
+    top: -50%;
   }
 }
