@@ -9,7 +9,7 @@ body {
 	margin: 25px;
 }
 
-h1, p, figcaption, span {
+h1, p, span {
 	font-family: "Arial", sans-serif;
 	margin: 1rem;
 }
