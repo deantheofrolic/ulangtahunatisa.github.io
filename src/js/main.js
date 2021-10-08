@@ -1,6 +1,6 @@
 // Delay 8 seconds, then load main page
 $(window).on("load", function(){
-     $(".loader-container").fadeOut("slow");
+     $(".loader-container").delay(8000).fadeOut("slow");
 });
 
 // Open form with button
