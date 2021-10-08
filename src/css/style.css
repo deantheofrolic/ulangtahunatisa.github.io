@@ -3,6 +3,10 @@
   box-sizing: border-box;
 }
 
+html {
+  position: relative;
+}
+
 body {
   font-family: "Roboto", sans-serif;
   background-color: #1D1D1D;
@@ -24,6 +28,7 @@ main .nav-item:last-child {
 
 main .nav-item {
   padding: 0.9em;
+  z-index: 2;
 }
 
 main .navbar-brand {
@@ -32,6 +37,10 @@ main .navbar-brand {
 
 main .nav-link:hover {
   color: #05FDD8;
+}
+
+main .move-right {
+  margin-right: auto;
 }
 
 main .navbar-brand:hover {
@@ -564,6 +573,7 @@ main .container .col-md-7 p {
   0% {
     top: 100%;
   }
+
   33%, 100% {
     top: -50%;
   }
