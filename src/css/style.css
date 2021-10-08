@@ -3,10 +3,6 @@
   box-sizing: border-box;
 }
 
-html {
-  position: relative;
-}
-
 body {
   font-family: "Roboto", sans-serif;
   background-color: #1D1D1D;
@@ -78,11 +74,6 @@ main .container .col-md-7 p {
 .primary-btn {
   border-radius: 30px;
   font-weight: bold;
-}
-
-.primary-btn a {
-  color: #1D1D1D;
-  text-decoration: none;
 }
 
 /* Present */
@@ -456,66 +447,14 @@ main .container .col-md-7 p {
   background-color: #FD2155;
 }
 
-.firework-one {
+.firework-style {
   left: 50%;
   top: 50%;
   transform: scale(1);
 }
 
-.firework-one .explosion::before {
+.firework-style .explosion::before {
   animation: explosion 2s ease-in-out infinite;
-}
-
-.firework-two {
-  left: 40%;
-  top: 45%;
-  transform: scale(.7);
-}
-
-.firework-two .explosion::before {
-  animation: explosion 2s .6s ease-in-out infinite;
-}
-
-.firework-three {
-  left: 60%;
-  top: 65%;
-  transform: scale(.4);
-}
-
-.firework-three .explosion::before {
-  animation: explosion 2s .4s ease-in-out infinite;
-}
-
-/* Videos */
-.monitor-container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-wrap: wrap;
-    height: 100vh;
-    width: 100%;
-}
-
-.monitor {
-    width: 660px;
-    height: 550px;
-    position: relative;
-    flex-shrink: 0;
-    margin: 20px;
-}
-
-.monitor .monitor-image{
-    width: 100%;
-}
-
-.video {
-    top: 5.7%;
-    left: 4.9%;
-    width: 90.8%;
-    border: 0;
-    height: 62%;
-    z-index: 1;
-    position: absolute;
 }
 
 /* Animations */
